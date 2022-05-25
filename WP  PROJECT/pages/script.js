@@ -1,0 +1,24 @@
+$('.city1').click(function(){
+    $('#div1').toggle('slow');
+});
+$('.city2').click(function(){
+    $('#div2').toggle('slow');
+});
+$('.city3').click(function(){
+    $('#div3').toggle('slow');
+});
+$('.city4').click(function(){
+    $('#div4').toggle('slow');
+});
+$('.city5').click(function(){
+    $('#div5').toggle('slow');
+});
+$('.city6').click(function(){
+    $('#div6').toggle('slow');
+});
+$('.city7').click(function(){
+    $('#div7').toggle('slow');
+});
+$('.city8').click(function(){
+    $('#div8').toggle('slow');
+});

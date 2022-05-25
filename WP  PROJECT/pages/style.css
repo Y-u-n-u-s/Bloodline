@@ -1,0 +1,120 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:"mont";
+    text-decoration:none;
+    list-style:none;  /* padding and border are include in height*/
+}
+h2{
+  padding: 10px;
+}
+h3{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+  min-height:100vh;
+  background-image: url('bgimg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+nav{
+  background-image: linear-gradient(rgba(252, 80, 117, 0.6),rgba(243, 96, 96, 0.6));
+  height:80px;
+  width:100%;
+}
+label.logo{
+  color:white;
+  font-size:35px;
+  line-height:80px;
+  padding: 0 100px;
+  font-weight:bold;
+}
+nav ul{
+  float:right;
+  margin-right:20px;
+  text-decoration: none;
+}
+nav ul #bar{
+  display:inline-block;
+  line-height:80px;
+  margin:0 5px;
+}
+nav ul #bar a{
+  color:white;
+  font-size:17px;
+  padding: 7px 13px;
+  border-radius: 3 px;
+  text-transform:uppercase;
+}
+a:hover{
+  background: #f8817d;
+  transition:.5s;
+}
+.checkbtn{
+  font-size:30px;
+  color:white;
+  float:right;
+  line-height:80px;
+  margin-right:40px;
+  cursor: pointer;
+  display:none;
+}
+#check{
+  display:none;
+}
+@media(max-width: 952px){
+  label.logo{
+      font-size:30px;
+      padding-left:50px;
+  }
+  nav ul #bar a{
+      font-size:16px;
+  }
+}
+@media(max-width:858px){
+  .checkbtn{
+      display:block;
+  }
+  ul{
+      position:fixed;
+      width:100%;
+      height:100vh;
+      background-image:linear-gradient(rgba(252, 80, 117, 0.6),rgba(243, 96, 96, 0.6));
+      top:80px;
+      left:-100%;
+      text-align:center;
+      transition:all .5s;
+  }
+  nav ul #bar{
+      display: block;
+      margin:50px 0;
+      line-height: 30px;
+  }
+  nav ul #bar a{
+      font-size:20px;
+  }
+  a:hover,a.active{
+      background:none;
+      color:#ee5959;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}
+.menu{
+  display:none;
+}
+#cities{
+    width: 400;
+  font-size: 20px;
+  background: rgba(255,255,255,0.5);
+  padding: 10px;
+  margin: 6px 0;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px grey;
+}
+#cities:hover{
+  background: rgba(71, 70, 70, 0.5);
+}

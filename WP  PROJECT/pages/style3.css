@@ -1,0 +1,67 @@
+body{
+	min-height:100vh;
+	background-image: url('bgimg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height:100%;
+	background-size: cover;
+  }
+.container-fluid{
+	width: 40%;
+	margin-left:20px;
+	margin-top: 100px;
+	}
+.container-fluid h2{
+	color: rgb(8, 8, 8);
+	position: relative;
+	}
+.container-fluid h2:after{
+	content: "";
+	position:absolute;
+	bottom: 0;
+	right: 12px;
+	width: 67px;
+	height: 2px;
+	background-color: hotpink;
+	}
+.accordion{
+	width: 100%;
+	padding: 0 5px;
+	border: 2px solid #fff;
+	cursor: pointer;
+	border-radius: 10px;
+	background-color: #54c571;
+	display: flex;
+	margin: 10px 0;
+	}
+.accordion .icon{
+	margin: 0 10px 0 0;
+	width: 30px;
+	height: 30px;
+	background: url:(toggle/plus.png) no repeat 8px 7px #6db5ff;
+	border-radius: 50%;
+	float: left;
+	transition: all .5s ease-in;
+	}
+.accordion h5{
+	font-size: 22px;
+	font style: sans-serif;
+	margin: 0;
+	padding: 3px 0 0 0;
+	font-weight: normal;
+	color:#80000;
+	transition: all .5s ease-in;
+	}
+
+.panel{
+	display:none;
+	padding: 0 15px;
+	border-left: 1px solid #ffff;
+	margin-left: 25px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: justify;
+	overflow: hidden;
+	max-height: 300px;
+	transition: all .5s ease-in;
+	}
